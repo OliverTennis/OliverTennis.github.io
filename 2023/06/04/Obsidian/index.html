@@ -1,0 +1,348 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Obsidian基本语法 | LorryAndy</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="#规范  基本语法标题1#[1-6] + 空格 +标题名称 （#的个数越多，标题字体大小越小）   字体格式斜体1* + 文本 + *   [!example]test  粗体1** + 文本 + **   [!example]test  粗斜体1*** + 文本 + ***   [!example]test  下划线1&lt;u&gt; + 文本 + &lt;&#x2F;u&gt;   [!example">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Obsidian基本语法">
+<meta property="og:url" content="http://example.com/2023/06/04/Obsidian/index.html">
+<meta property="og:site_name" content="LorryAndy">
+<meta property="og:description" content="#规范  基本语法标题1#[1-6] + 空格 +标题名称 （#的个数越多，标题字体大小越小）   字体格式斜体1* + 文本 + *   [!example]test  粗体1** + 文本 + **   [!example]test  粗斜体1*** + 文本 + ***   [!example]test  下划线1&lt;u&gt; + 文本 + &lt;&#x2F;u&gt;   [!example">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2023-06-04T09:35:56.139Z">
+<meta property="article:modified_time" content="2023-06-27T13:20:32.347Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/06/04/Obsidian/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Obsidian基本语法',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-06-27 21:20:32'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="LorryAndy"><span class="site-name">LorryAndy</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Obsidian基本语法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-06-04T09:35:56.139Z" title="发表于 2023-06-04 17:35:56">2023-06-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-06-27T13:20:32.347Z" title="更新于 2023-06-27 21:20:32">2023-06-27</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Obsidian基本语法"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>#规范 </p>
+<h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#[1-6] + 空格 +标题名称 （#的个数越多，标题字体大小越小）</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="字体格式"><a href="#字体格式" class="headerlink" title="字体格式"></a>字体格式</h2><h4 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">* + 文本 + *</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[!example]<br><em>test</em></p>
+</blockquote>
+<h4 id="粗体"><a href="#粗体" class="headerlink" title="粗体"></a>粗体</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">** + 文本 + **</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[!example]<br><strong>test</strong></p>
+</blockquote>
+<h4 id="粗斜体"><a href="#粗斜体" class="headerlink" title="粗斜体"></a>粗斜体</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*** + 文本 + ***</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[!example]<br><em><strong>test</strong></em></p>
+</blockquote>
+<h4 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;u&gt; + 文本 + &lt;/u&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[!example]<br><u> test </u></p>
+</blockquote>
+<h4 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h4><figure class="highlight m"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~ + 文本 + ~~</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[!example]<br><del>test</del></p>
+</blockquote>
+<h4 id="高亮"><a href="#高亮" class="headerlink" title="高亮"></a>高亮</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`== + 文本 + ==`</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[!example]<br>&#x3D;&#x3D;test&#x3D;&#x3D;</p>
+</blockquote>
+<hr>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">数字 + . + 空格 + 文本</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[!example]</p>
+<ol>
+<li>test1</li>
+<li>test2<br> test3</li>
+</ol>
+</blockquote>
+<h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- + 空格 + 文本</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[!example]</p>
+<ul>
+<li>test1</li>
+<li>test2</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>[!note]<br>列表中换行用<kbd>Shift</kbd> + <kbd>Enter</kbd></p>
+</blockquote>
+<hr>
+<h2 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># + 空格 + 标签名称</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[!example]<br> #test</p>
+</blockquote>
+<hr>
+<h2 id="复选框"><a href="#复选框" class="headerlink" title="复选框"></a>复选框</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- + 空格 + [ + (x|?) + ] + 文本</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[!example]</p>
+<ul>
+<li><input disabled="" type="checkbox"> test</li>
+<li><input checked="" disabled="" type="checkbox"> test</li>
+<li>[?] test</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">! + [ + 文本 + (|图片宽度) +] + 图片地址</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[!example]<br><img src="/zsource/img/test.png" alt="test"><br><img src="/zsource/img/test.png" alt="test|50"></p>
+</blockquote>
+<hr>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><h4 id="外部链接"><a href="#外部链接" class="headerlink" title="外部链接"></a>外部链接</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[ + 文本 + ] + ( + 网页/本地链接/URI + )</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[!example]<br><a target="_blank" rel="noopener" href="https://yjy.ruijie.com.cn/">百度</a><br><a href="#NULL">字体格式</a></p>
+</blockquote>
+<blockquote>
+<p>[!note]<br>URI具体格式参考([[URI]])<br>如果链接中包含空格可以使用<strong>%20</strong>表示或者使用<strong>&amp;lt &amp;gt</strong></p>
+</blockquote>
+<h4 id="内部链接"><a href="#内部链接" class="headerlink" title="内部链接"></a>内部链接</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[[ + 文本 + (|重命名) ]]</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[!example]<br>[[MarkDown#NULL|NULL]]</p>
+</blockquote>
+<blockquote>
+<p>[!notice]</p>
+<ul>
+<li>链接前加上!相当于显示链接对应内容</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; + 文本</span><br><span class="line">&gt; + [!type] + 文本</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>test</p>
+</blockquote>
+<p>typ类型如下：</p>
+<blockquote>
+<p>[!note]- note<br>特殊引用后面加空格改标题<br>特殊引用后面加-和空格可折叠内容</p>
+</blockquote>
+<blockquote>
+<p>[!abstract] abstract&#x2F;summary&#x2F;tldr</p>
+</blockquote>
+<blockquote>
+<p>[!info] info</p>
+</blockquote>
+<blockquote>
+<p>[!todo]</p>
+</blockquote>
+<blockquote>
+<p>[!tip] tip&#x2F;hint&#x2F;important </p>
+</blockquote>
+<blockquote>
+<p>[!success] success&#x2F;check&#x2F;done</p>
+</blockquote>
+<blockquote>
+<p>[!faq] question&#x2F;help&#x2F;faq</p>
+</blockquote>
+<blockquote>
+<p>[!attention] warning&#x2F;caution&#x2F;attention</p>
+</blockquote>
+<blockquote>
+<p>[!missing] failure&#x2F;fail&#x2F;missing</p>
+</blockquote>
+<blockquote>
+<p>[!error] danger&#x2F;error</p>
+</blockquote>
+<blockquote>
+<p>[!bug] bug</p>
+</blockquote>
+<blockquote>
+<p>[!example] example</p>
+</blockquote>
+<blockquote>
+<p>[!cite] quote&#x2F;cite</p>
+</blockquote>
+<hr>
+<h2 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[ + ^ + 文本 + ] </span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>[!example]</p>
+</blockquote>
+<p>test<a href="test">^1</a></p>
+<blockquote>
+<p>[!note]</p>
+<ul>
+<li>脚注提示会放在正文最后</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%% + 文本 + %%</span><br></pre></td></tr></table></figure>
+
+<p>%%<br>test<br>%%</p>
+<blockquote>
+<p>[!note]<br>注释在阅读模式下不会显示</p>
+</blockquote>
+<hr>
+<h1 id="扩展用法"><a href="#扩展用法" class="headerlink" title="扩展用法"></a>扩展用法</h1><h2 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h2><blockquote>
+<p>[!example]<br>$$\begin{vmatrix}a &amp; b\ c &amp; d \end{vmatrix}&#x3D;ad-bc$$</p>
+</blockquote>
+<blockquote>
+<p>[!note]<br>obsidian的数学语法参考<a target="_blank" rel="noopener" href="http://docs.mathjax.org/en/latest/basic/mathjax.html">Mathjax</a></p>
+</blockquote>
+<hr>
+<h2 id="Diagram"><a href="#Diagram" class="headerlink" title="Diagram"></a>Diagram</h2><blockquote>
+<p>[!example]</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;sequenceDiagram</span><br><span class="line">  Alice-&gt;&gt;+John: Hello John, how are you?</span><br><span class="line">   Alice-&gt;&gt;+John: John, can you hear me?</span><br><span class="line">   John--&gt;&gt;-Alice: Hi Alice, I can hear you!</span><br><span class="line">   John--&gt;&gt;-Alice: I feel great!</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>[!note]<br>obsidian的Diagram语法参考<a href="%5Bmermaid-js.github.io%5D(https://mermaid-js.github.io/)">Mermaid</a></p>
+</blockquote>
+<hr>
+<h1 id="NULL"><a href="#NULL" class="headerlink" title="NULL"></a>NULL</h1><blockquote>
+<p>参考链接：<br>    <a target="_blank" rel="noopener" href="https://publish.obsidian.md/help-zh">obsidian中文帮助</a></p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2023/06/04/Obsidian/">http://example.com/2023/06/04/Obsidian/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">LorryAndy</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/06/27/%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96/" title="内存优化"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">内存优化</div></div></a></div><div class="next-post pull-right"><a href="/2023/05/31/hello-world/" title="Hello World"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hello World</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">基本语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E4%BD%93%E6%A0%BC%E5%BC%8F"><span class="toc-number">1.2.</span> <span class="toc-text">字体格式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%9C%E4%BD%93"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">斜体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B2%97%E4%BD%93"><span class="toc-number">1.2.0.2.</span> <span class="toc-text">粗体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B2%97%E6%96%9C%E4%BD%93"><span class="toc-number">1.2.0.3.</span> <span class="toc-text">粗斜体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8B%E5%88%92%E7%BA%BF"><span class="toc-number">1.2.0.4.</span> <span class="toc-text">下划线</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E7%BA%BF"><span class="toc-number">1.2.0.5.</span> <span class="toc-text">删除线</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%AB%98%E4%BA%AE"><span class="toc-number">1.2.0.6.</span> <span class="toc-text">高亮</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-number">1.3.</span> <span class="toc-text">列表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">1.3.0.1.</span> <span class="toc-text">有序列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">1.3.0.2.</span> <span class="toc-text">无序列表</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E7%AD%BE"><span class="toc-number">1.4.</span> <span class="toc-text">标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E9%80%89%E6%A1%86"><span class="toc-number">1.5.</span> <span class="toc-text">复选框</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E7%89%87"><span class="toc-number">1.6.</span> <span class="toc-text">图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5"><span class="toc-number">1.7.</span> <span class="toc-text">链接</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%96%E9%83%A8%E9%93%BE%E6%8E%A5"><span class="toc-number">1.7.0.1.</span> <span class="toc-text">外部链接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%85%E9%83%A8%E9%93%BE%E6%8E%A5"><span class="toc-number">1.7.0.2.</span> <span class="toc-text">内部链接</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E7%94%A8"><span class="toc-number">1.8.</span> <span class="toc-text">引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%84%9A%E6%B3%A8"><span class="toc-number">1.9.</span> <span class="toc-text">脚注</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E9%87%8A"><span class="toc-number">1.10.</span> <span class="toc-text">注释</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%89%A9%E5%B1%95%E7%94%A8%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">扩展用法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6"><span class="toc-number">2.1.</span> <span class="toc-text">数学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Diagram"><span class="toc-number">2.2.</span> <span class="toc-text">Diagram</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#NULL"><span class="toc-number">3.</span> <span class="toc-text">NULL</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/27/%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96/" title="内存优化">内存优化</a><time datetime="2023-06-27T13:29:26.140Z" title="发表于 2023-06-27 21:29:26">2023-06-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/04/Obsidian/" title="Obsidian基本语法">Obsidian基本语法</a><time datetime="2023-06-04T09:35:56.139Z" title="发表于 2023-06-04 17:35:56">2023-06-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/31/hello-world/" title="Hello World">Hello World</a><time datetime="2023-05-31T14:37:49.203Z" title="发表于 2023-05-31 22:37:49">2023-05-31</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By John Doe</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
